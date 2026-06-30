@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Social Media App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Mini Social Media App</h1>
+    <!--Profile Section-->
+
+    <div class="profile">
+      <img src = "https://cdn-icons-png.flaticon.com/512/6997/6997662.png" alt="Profile">
+      <h2>Varsha Verma</h2>
+<button id="followBtn">Follow</button>
+<p>BCA Student | Frontend Developer</p>
+<p>🌟120 Followers | 80 Following</p>
+
+
+    </div>
+
+    <!--Creat Post Section-->
+    <div class="post-box">
+      <textarea
+      id="postInput"
+      placeholder="What's on your mind?">
+    </textarea>
+
+    <button class="post-btn" onclick="addPost()">
+    post
+  </button>
+
+    </div>
+    <!--Sample Post-->
+    <div id="posts">
+      <div class="post">
+        <p>Welcome to my Mini Social Media App🚀</p>
+        <button class="like-btn"
+        onclick="likePost(this)">
+      🤍Like</button>
+
+      <span class="like-count">
+        0 Likes
+      </span>
+
+
+      </div>
+      <div class="post">
+        <p>💻Learning HTML, CSS and JavaScript</p>
+        <button class="like-btn" onclick="likePost(this)">🤍Like</button>
+        <span class="like-count">0 Likes</span>
+      </div>
+      <div class="post">
+        <p>🎉Completed my CodeAlpha Mini Social Media Projects.</p>
+        <button class="like-btn" onclick="likePost(this)">🤍Like</button>
+        <span class="like-count">0 Likes</span>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
